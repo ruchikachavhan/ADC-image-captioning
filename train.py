@@ -60,7 +60,7 @@ vocab = get_vocab('vocab.pkl')
 args.vocab_size = len(vocab)
 args.max_len = 30
 
-images = glob.glob(args.path+ "\\*") 
+images = glob.glob(args.path+ "/*") 
 data = json.loads(open(args.json_path, "r").read())['images']
 captions = []
 dataImages = []
