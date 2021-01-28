@@ -9,21 +9,21 @@ Please make sure your data contains images and a json file containing captions c
 
 ## Step 1: Build vocabulary
 
-'''
+```
 python vocab_build.py --caption_path <path to json file> --vocab_path <path to save the vocab file>
-'''
+```
   
 ## Step 2: Train Model
 
 ### To load a pretrained Actor and Value Network model and train 
 
-'''
+```
 python train.py --data_path <path to images> --json_path <path to json file> --load_pretrained --actor_pretrained <path to actor model> --critic_pretrained <path to critic model>
-'''
+```
   
 ### To train from scratch
-'''
+```
 python train.py --data_path <path to images> --json_path <path to json file>
-'''
+```
   
 
