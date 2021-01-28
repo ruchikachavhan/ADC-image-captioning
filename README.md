@@ -31,6 +31,10 @@ python train.py --data_path <path to images> --json_path <path to json file> --l
 python train.py --data_path <path to images> --json_path <path to json file>
 ```
   
+## Results
+
+<img width="442" alt="icpr3" src="https://user-images.githubusercontent.com/32021556/106124036-a8c31f00-6180-11eb-9e96-e3b289d8e85d.PNG">
+
 ## Citation
 If you find this work useful, please cite our paper, 
 ```
@@ -43,4 +47,5 @@ year      = {2020}
 ```
 <br> 
 
+## References
 A significant part of this code has been adapted from the code from [Actor-Critic Sequence Training for Image Captioning](https://arxiv.org/abs/1706.09601)
