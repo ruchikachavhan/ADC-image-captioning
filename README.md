@@ -41,3 +41,6 @@ booktitle = {International Conference on Pattern Recognition (ICPR)},
 year      = {2020}
 }
 ```
+<br> 
+
+A significant part of this code has been adapted from the code from [Actor-Critic Sequence Training for Image Captioning](https://arxiv.org/abs/1706.09601)
