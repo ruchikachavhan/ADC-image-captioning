@@ -60,7 +60,7 @@ def WriteInfiles(words, fileNames, epoch, vocab, labels):
         sentence = sentences[b]
         if(epoch == 0):
                 targetSentence = getSentence(vocab, labels[b])
-                name = "resultsA2C/"+ fileNames[b].split(".")[0].split("\\")[-1]+ '.txt'
+                name = "resultsA2C/"+ fileNames[b].split(".")[0].split("/")[-1]+ '.txt'
                 f = open(name, "w")
                 f.write(str(targetSentence))
                 f.write("\n")
@@ -69,7 +69,7 @@ def WriteInfiles(words, fileNames, epoch, vocab, labels):
                 f.write(str(sentence))
                 f.write("\n")
         else:
-            name =  "resultsA2C/"+ fileNames[b].split(".")[0].split("\\")[-1]+ '.txt'
+            name =  "resultsA2C/"+ fileNames[b].split(".")[0].split("/")[-1]+ '.txt'
             f = open(name, "a+")
             f.write(str(epoch))
             f.write("\n")
