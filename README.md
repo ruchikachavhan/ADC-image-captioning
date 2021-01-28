@@ -26,4 +26,13 @@ python train.py --data_path <path to images> --json_path <path to json file> --l
 python train.py --data_path <path to images> --json_path <path to json file>
 ```
   
-
+## Citation
+If you find this work useful, please cite our paper, 
+```
+@inproceedings{chavhan2020novel,
+author    = {Ruchika Chavhan and Biplab Banerjee and Xiao Xiang Zhu and Subhasis Chaudhuri},
+title     = {A Novel Actor Dual-Critic Model for Remote Sensing Image Captioning},
+booktitle = {International Conference on Pattern Recognition (ICPR)},
+year      = {2020}
+}
+```
