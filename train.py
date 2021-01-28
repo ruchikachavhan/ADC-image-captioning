@@ -10,7 +10,7 @@ parser.add_argument('--json_path', type=str, default='data/data.json')
 parser.add_argument('--save', type=str, default='imgcapt_v2_{}.pt')
 
 parser.add_argument('--actor_pretrained', type=str, default='actor.pth')
-parser.add_argument('--critic_pre_trained', type=str, default='critic.pth')
+parser.add_argument('--critic_pretrained', type=str, default='critic.pth')
 
 parser.add_argument('--actor_path', type=str, default='actor.pth')
 parser.add_argument('--critic_path', type=str, default='critic.pth')
@@ -18,7 +18,7 @@ parser.add_argument('--enc_dec_path', type=str, default='actor.pth')
 
 parser.add_argument('--lr', type=float, default=0.0005)
 parser.add_argument('--new_lr', type=float, default=5e-6)
-parser.add_argument('--load_pretrain', type=bool, default=True)
+parser.add_argument('--load_pretrained', type=bool, default=True)
 parser.add_argument('--actor_epochs', type=int, default=20)
 parser.add_argument('--epochs', type=int, default=100)
 parser.add_argument('--iterations', type=int, default=2000)
@@ -350,7 +350,7 @@ try:
             model_source = {
                 "model": model_state_dict,
             }
-            torch.save(model_source, args.actor_path)
+            torch.save(model_source, args.actor_pretrained)
 
         for step in range(0, 10):
             pre_train_critic()
@@ -358,7 +358,7 @@ try:
             model_source = {
                 "model": model_state_dict,
             }
-            torch.save(model_source, args.critic_path)
+            torch.save(model_source, args.critic_pretrained)
 
 
     EncoderDecoder.train()
