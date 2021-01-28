@@ -74,9 +74,9 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--caption_path', type=str, 
-                        default="C:\\Users\\Ruchika\\Downloads\\dataset_UCM.json", 
+                        default="", 
                         help='path for train annotation file')
-    parser.add_argument('--vocab_path', type=str, default='E:\\ADC UCM\\vocab.pkl', 
+    parser.add_argument('--vocab_path', type=str, default='', 
                         help='path for saving vocabulary wrapper')
     parser.add_argument('--threshold', type=int, default=1, 
                         help='minimum word count threshold')
