@@ -2,8 +2,13 @@
 Code for our paper: [A Novel Actor Dual-Critic Model for Image Captioning](https://arxiv.org/abs/2010.01999), ICPR 2020 <br>
 [Ruchika Chavhan](https://ruchikachavhan.github.io/), [Biplab Banerjee](https://biplab-banerjee.github.io/), [Xiao Xiang Zhu](https://www.lrg.tum.de/sipeo/home/), [Subhasis Chaudhuri](https://www.ee.iitb.ac.in/~sc/)
 
-# Pre-requisites
+# Datasets
+1) [Remote Sensing Image Captioning Dataset (RSICD)](https://github.com/201528014227051/RSICD_optimal) <br>
+2) [UC-Merced Captioning Dataset](http://vision.ucmerced.edu/datasets/) <br> 
 Please make sure your data contains images and a json file containing captions corresponding to each image. 
+
+# Methodology
+<img width="651" alt="for_git" src="https://user-images.githubusercontent.com/32021556/106123090-7ebd2d00-617f-11eb-9908-5ccfb69ed1a1.PNG">
 
 # Training
 
